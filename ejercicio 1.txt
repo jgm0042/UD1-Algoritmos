@@ -1,0 +1,4 @@
+1- inicio
+2- ¿Cuál es tu nombre?
+3- Leer nombre
+4- Hola *Nombre
