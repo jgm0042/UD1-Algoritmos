@@ -1,0 +1,11 @@
+Algoritmo Compra
+	Escribir 'Ingrese el total de la compra: '
+	Leer totalCompra
+	// Descuento 
+	descuento <- totalCompra*0.15
+	// Precio final
+	precioFinal <- totalCompra-descuento
+	// Resultado
+	Escribir'Te descuento ', descuento
+	Escribir 'Tienes que pagar ', precioFinal
+FinAlgoritmo
