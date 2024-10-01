@@ -1,0 +1,12 @@
+Proceso DeMinutosAHoras
+
+    Escribir "Ingrese la cantidad de minutos: "
+    Leer minutos
+	
+    // Calcular horas y minutos restantes
+    horas = minutos / 60
+    restantes = minutos Mod 60
+	
+    // Resultado
+    Escribir minutos, " minutos son ", horas, " horas y ", restantes, " minutos."
+FinProceso
