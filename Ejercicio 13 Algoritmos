@@ -1,0 +1,15 @@
+Proceso Raices
+    Definir numero, raizCuadrada, raizCubica Como Real
+    
+    Escribir "De que número quieres la raíz cuadrada y cúbica?? "
+    Leer numero
+    
+    // Raíz cuadrada
+    raizCuadrada = raiz(numero)
+    
+    // Raíz cúbica
+    raizCubica = numero ^ (1/3)
+    
+    Escribir "La raíz cuadrada de ", numero, " es: ", raizCuadrada
+    Escribir "La raíz cúbica de ", numero, " es: ", raizCubica
+FinProceso
