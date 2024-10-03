@@ -1,0 +1,15 @@
+Proceso InvertirNumero
+	Definir numero, invertido, residuo Como Entero
+	Escribir "Ingrese un número: "
+	Leer numero
+	
+	invertido = 0
+	
+	Mientras numero > 0 Hacer
+		residuo = numero % 10
+		invertido = invertido * 10 + residuo
+		numero = Trunc(numero / 10)
+	Fin Mientras
+	
+	Escribir "El número invertido es: ", invertido
+FinProceso
