@@ -1,0 +1,30 @@
+Proceso CalcularNotaFinal
+    Definir respuestasCorrectas, respuestasIncorrectas, respuestasBlanco Como Entero
+    Definir notaTotal, notaFinal Como Real
+    
+    notaTotal = 0
+    
+    // Leer las respuestas
+    Escribir "Ingrese la cantidad de respuestas correctas: "
+    Leer respuestasCorrectas
+    Escribir "Ingrese la cantidad de respuestas incorrectas: "
+    Leer respuestasIncorrectas
+    Escribir "Ingrese la cantidad de respuestas en blanco: "
+    Leer respuestasBlanco
+    
+    // Calcular la nota 
+    notaTotal = (respuestasCorrectas * 5) - (respuestasIncorrectas * 1) + (respuestasBlanco * 0)
+    
+    // Calcular la nota final sobre 10
+    totalRespuestas = respuestasCorrectas + respuestasIncorrectas + respuestasBlanco
+    
+    // Evitar división por cero
+    Si totalRespuestas > 0 Entonces
+        notaFinal = (notaTotal / (totalRespuestas * 5)) * 10 // Normalizar a 10
+    Sino
+        notaFinal = 0 // Si no hay respuestas, la nota es 0
+    Fin Si
+    
+    // Mostrar el resultado obtenido
+    Escribir "La nota final del estudiante es: ", notaFinal
+FinProceso
