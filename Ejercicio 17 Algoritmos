@@ -1,0 +1,30 @@
+Proceso HoraDeLlegadaPueblo
+	Definir HH, MM, SS, T, totalSegundos, llegadaHH, llegadaMM, llegadaSS Como Entero
+	
+	// Solicitar la hora de salida
+	Escribir "Ingrese la hora de salida (HH): "
+	Leer HH
+	Escribir "Ingrese los minutos de salida (MM): "
+	Leer MM
+	Escribir "Ingrese los segundos de salida (SS): "
+	Leer SS
+	
+	// Solicitar el tiempo de viaje 
+	Escribir "Ingrese el tiempo de viaje en segundos (T): "
+	Leer T
+	
+	// Calcular el total de segundos
+	totalSegundos = HH * 3600 + MM * 60 + SS + T
+	
+	// Calcular la hora, minutos y segundos de llegada
+	llegadaHH = totalSegundos / 3600
+	llegadaMM = (totalSegundos % 3600) / 60
+	llegadaSS = totalSegundos % 60
+	
+	// Ajustar la hora 
+	llegadaHH = llegadaHH % 24
+	
+	// Mostrar la hora de llegada
+	Escribir "La hora de llegada a la ciudad B es: ", llegadaHH, " horas, ", llegadaMM, " minutos y ", llegadaSS, " segundos."
+FinProceso
+
