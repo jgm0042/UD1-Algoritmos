@@ -1,0 +1,40 @@
+Proceso CalcularDineroTotal
+    Definir monedas2, monedas1, monedas50, monedas20, monedas10 Como Entero
+    Definir totalEuros, totalCentimos Como Real
+    
+
+    totalEuros = 0
+    totalCentimos = 0
+    
+    // Leer monedas de 2 euros
+    Escribir "Cuantas monedas de 2 euros tienes?: "
+    Leer monedas2
+    totalEuros = totalEuros + (monedas2 * 2) 
+	
+    // Leer y sumar monedas de 1 euro
+    Escribir "Cuanta monedas de 1 euro tienes?: "
+    Leer monedas1
+    totalEuros = totalEuros + (monedas1 * 1)
+	
+	// Leer y sumar monedas de 50 centimos
+    Escribir "Cuantas monedas de 50 centimos tienes? "
+    Leer monedas50
+    totalCentimos = totalCentimos + (monedas50 * 50)
+	
+	// Leer y sumar monedas de 20 centimos
+    Escribir "Cuantas monedas de 20 centimos tienes?? "
+    Leer monedas20
+    totalCentimos = totalCentimos + (monedas20 * 20) 
+	
+    // Solicitar la cantidad de monedas de 10 céntimos
+    Escribir "Cuantas monedas de 10 centimos tienes? "
+    Leer monedas10
+    totalCentimos = totalCentimos + (monedas10 * 10) 
+	
+    // Convertir centimos a euros 
+    totalEuros = totalEuros + (totalCentimos / 100)
+    totalCentimos = totalCentimos Mod 100 
+	
+    // Mostrar el resultado total
+    Escribir " tienes ", totalEuros, " euros y ", totalCentimos, " céntimos."
+FinProceso
