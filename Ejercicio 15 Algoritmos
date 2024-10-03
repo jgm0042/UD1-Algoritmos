@@ -1,0 +1,24 @@
+Proceso IntercambiarValores
+	Definir A, B, temporal Como Real
+	
+	// Leer número
+	Escribir "Ingrese el valor de A: "
+	Leer A
+	Escribir "Ingrese el valor de B: "
+	Leer B
+	
+	// Mostrar los valores originales
+	Escribir "Valores antes del intercambio:"
+	Escribir "A = ", A
+	Escribir "B = ", B
+	
+	// Intercambiar los valores
+	temporal = A
+	A = B
+	B = temporal
+	
+	// Mostrar los valores intercambiados
+	Escribir "Valores después del intercambio:"
+	Escribir "A = ", A
+	Escribir "B = ", B
+FinProceso
