@@ -1,0 +1,27 @@
+Proceso   CalcularTiempoAlcance
+    Definir d, v1, v2, tiempo Como Real
+	
+    // Leer distancia 
+    Escribir "Ingrese la distancia entre los dos vehículos (en km):"
+    Leer d
+	
+    // Leer velocidades de los dos vehículos
+    Escribir "Ingrese la velocidad del primer vehiculo (en km/h):"
+    Leer v1
+    Escribir "Ingrese la velocidad del segundo vehículo (en km/h):"
+    Leer v2
+	
+    // Verificar que el segundo vehiculo vaya mas rápido
+    Si v2 <= v1 Entonces
+        Escribir "El vehículo detrás debe tener una velocidad mayor que el de adelante."
+    Sino
+        // Calcular el tiempo en horas
+        tiempo <- d / (v2 - v1)
+		
+        // Convertir el tiempo a minutos
+        tiempo <- tiempo * 60
+		
+        // Mostrar el resultado
+        Escribir "El vehículo detrás tardará ", tiempo, " minutos en alcanzar al primer vehiculo"
+    FinSi
+FinProceso
