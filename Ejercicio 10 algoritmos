@@ -1,0 +1,29 @@
+Proceso CalificacionFinal
+    Definir nota1, nota2, nota3, examenFinal, trabajoFinal Como Real
+    Definir promedioParcial, notaFinal Como Real
+    
+    // leer notas de los examenes
+    Escribir "Ingrese la nota del primer parcial: "
+    Leer nota1
+    Escribir "Ingrese la nota del segundo parcial: "
+    Leer nota2
+    Escribir "Ingrese la nota del tercer parcial: "
+    Leer nota3
+    
+    // cálculo de la media de los 3 examenes
+    promedioParcial <- (nota1 + nota2 + nota3) / 3
+    
+    // nota del examen final
+    Escribir "Ingrese la nota del examen final: "
+    Leer examenFinal
+    
+    // leer nota del trabajo final
+    Escribir "Ingrese la nota del trabajo final: "
+    Leer trabajoFinal
+    
+    // calculo de la notafinal
+    notaFinal <- (promedioParcial * 0.55) + (examenFinal * 0.30) + (trabajoFinal * 0.15)
+    
+    // escribir la nota final
+    Escribir "La nota final del alumno es: ", escribir calificacionFinal
+Fin Proceso
